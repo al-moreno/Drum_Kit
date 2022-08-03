@@ -9,7 +9,7 @@
 
 ## Description
 
-In this application, you will witness my use of DOM Manipulation as well as JavaScript switch statement and the use of constructor functions. 
+In this application, you will witness my use of DOM Manipulation as well as JavaScript switch statement, addition of event listeners,the use of anonymous functions and "this" keyword reference. 
 
 ## Deployment: 
 

@@ -9,13 +9,13 @@
 
 ## Description
 
-In this application, you will witness my use of DOM Manipulation as well as JavaScript switch statement, addition of event listeners,the use of anonymous functions and "this" keyword reference. 
+In this application, you will witness my use of DOM Manipulation as well as JavaScript switch statement, addition of event listeners, the use of anonymous functions and "this" keyword reference. 
 
 ## Deployment: 
 
 [GitHub] Repo: https://github.com/al-moreno/Drum_Kit
 
-LiveServer:  https://almoreno.org/
+LiveServer:  https://al-moreno.github.io/Drum_Kit/
 
 ![picture](image.png)
 

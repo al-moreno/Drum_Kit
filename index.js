@@ -5,8 +5,9 @@ let drum = document.querySelectorAll('.drum');
 //Get a reference to the document adding a listening event of keydown and passing an anonymous function with the event in which it was envoked
 document.addEventListener('keydown', function (event) {
     // passing the function above with the event's key
-    makeSound(event.key)
-
+    makeSound(event.key);
+    // Envoking the button animation function  based on the key provited by the event which called it.
+    buttonAnimation(event.key);
 });
 
 
@@ -19,6 +20,8 @@ for (i = 0; i < drum.length; i++) {
         let buttonClicked = this.innerHTML
         //call function below and pass the buttonClick to run on the switch statment function below
         makeSound(buttonClicked);
+        //Envoking the button animation function based on the current key pressed
+        buttonAnimation(buttonClicked);
 
     });
 }
@@ -66,5 +69,17 @@ function makeSound(key) {
 
 
 
+// Funtion to generate animation
+function buttonAnimation(currentKey) {
+
+    // generating animation reference based on selector
+    let activeButton = document.querySelector('.' + currentKey);
+    //add a class to the element
+    activeButton.classList.add('pressed');
 
 
+    // set a timeout method to remove the class after the given amout of time
+    setTimeout(function () {
+        activeButton.classList.remove('pressed');
+    }, 100);
+}
